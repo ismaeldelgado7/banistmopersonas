@@ -1,0 +1,49 @@
+<html dir="ltr"><head><link href="/KronerPA/jhx/css/uics.css" rel="stylesheet" type="text/css" media="all"><link href="/KronerPA/jhx/css/onehsbc/theme.css" rel="stylesheet" type="text/css" media="all"><!--[if IE 8]><link href="/KronerPA/jhx/css/ieSupport/uics-ie8.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 7]><link href="/KronerPA/jhx/css/ieSupport/uics-ie7.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 6]><link href="/KronerPA/jhx/css/ieSupport/uics-ie6.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 6]><link href="/jhx/css/ieSupport/theme-ie6.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><link href="/KronerPA/jhx/css/onehsbc/layout.css" rel="stylesheet" type="text/css" media="all"><link href="/KronerPA/jhx/css/kroner_custom.css" rel="stylesheet" type="text/css" media="all"><script src="/KronerPA/jhx/js/scriptaculous/lib/prototype.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/scriptaculous/src/scriptaculous.js" type="text/javascript"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/builder.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/effects.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/dragdrop.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/controls.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/slider.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/sound.js"></script><script src="/KronerPA/jhx/js/uics.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/tablekit.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/menus.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/calendar.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/panels.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/form.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/resizable.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/listBuilder.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/insertableContent.js" type="text/javascript"></script><!--[if IE 6]><script src="/KronerPA/jhx/js/uics-ie6.js" type="text/javascript"></script><![endif]--><script src="/KronerPA/jhx/js/jhx/jhx_action.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/jhx/jhx_clientValidators.js" type="text/javascript"></script><title>Página de Inicio de Kroner</title></head>
+		<body class="cs csV-3 csInterstitial-init csFormChange-init" lang="default"><div class="oh"><div id="csFader" class="csClick csFader csHide"></div><div id="csContainer" class="csFixedLayout csCenterLayout"><div id="csContainerWrap"><div id="csContainerCalendar"><div class="csPanelCover"></div><div id="csPanelCalendar"><div class="csChevron csChevronTop" id="csCalendarChevron"></div></div></div><div id="csPanelHint"><div id="csPanelHintWrap"><div class="csPanel csPanelHint"><div class="csPanelTopLeft"><div class="csPanelTopRight"><div class="csPanelContent"><div id="csPanelHintScroll" class="csPanelScroll"></div></div></div></div><div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div><div id="csHintChevron" class="csChevron csChevronTop"></div></div></div></div><div id="csSearchNSelect" class="csNav-x csMenu-x csClick csAccordian csSearchNSelect"> <div class="csPanelCover"></div>    <ul class="csNavList"><li class="csNavToggle-0 csNavFirst csMenuContextual csNavShow"><div id="csSearchNSelectContent" class="csNavContent"><div class="csPanel"><div class="csPanelTopLeft"><div class="csPanelTopRight"><div class="csPanelContent"><div id="csSearchNSelectScroll" class="csPanelScroll"></div></div></div></div><div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div></div></div></li></ul></div>  <div id="csMenuContextual" class="csNav-x csMenu-x csClick csAccordian csMenuContextual"> <div class="csPanelCover"></div>  <ul class="csNavList"><li class="csNavToggle-0 csNavFirst csMenuContextual csNavShow"><div id="csMenuContextualContent" class="csNavContent"><div class="csPanel"><div class="csPanelTopLeft"><div class="csPanelTopRight"><div class="csPanelContent"><div id="csMenuContextualScroll" class="csPanelScroll"></div></div></div></div><div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div></div></div></li></ul> </div>
+			<div id="_idJsp4" class="csColumns"><div class="csColumnsWrap">
+				<div id="csMain"><div></div>
+					
+					    
+						
+							
+							
+								
+									
+										
+									
+									
+										
+									
+									
+										
+									
+								
+								
+									
+								
+							
+						
+					<form id="_idJsp6" name="_idJsp6" class="csForm csMsgs-x" method="post" action="/KronerPA/pages/error/errorKroner.jsf" target=""><br><br><br><br><br><br><div class="csPanel csPanelMain"><div class="csPanelTopLeft"><div class="csPanelTopRight"><div class="csPanelHeading"><h3 tabindex="0" class="csPanelToggle">Ocurrió un error en la Aplicación</h3></div><div class="csPanelContent"><div class="csPanelScroll"><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 10%;" class="csLabels"><col style="width: 80%;" class="csFields"><col style="width: 10%;" class="csLabels"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><br><br></div></td><td><div class="csFields" style="text-align:left"><img id="_idJsp6:_idJsp15" src="/KronerPA/jhx/css/onehsbc/images/boxes/boxIconErrors.gif"><strong><big>PROBLEMAS CON EL HOST LLAMAR AL 2179696.</big></strong></div></td><td class="csLabel"><div class="csLabel" style="text-align:right"><br><br></div></td></tr></tbody></table></fieldset><div class="csButtons csRow"><div class="csCol-2"><input id="_idJsp6:_idJsp20" type="submit" class="csButton csAct" name="cmd_initLogin" value="Aceptar"></div></div></div></div></div></div><div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div></div><input type="hidden" name="_idJsp6_SUBMIT" value="1"><input type="hidden" name="jsf_sequence" value="5"><input type="hidden" name="_idJsp6:_idcl" value=""></form>
+				</div>
+			</div></div>
+		<script type="text/javascript">//<![CDATA[ 
+Event.observe(window, 'load', loadJs);
+function loadJs(){
+Event.observe('_idJsp6:_idJsp20','click',function(){document.forms['_idJsp6']['_idJsp6:_idcl'].value='submit'; });
+	function clear__5FidJsp6()
+	{
+		clearFormHiddenParams__idJsp6('_idJsp6');
+	}
+	
+	function clearFormHiddenParams__idJsp6(currFormName)
+	{
+		var f = document.forms['_idJsp6'];
+		f.elements['_idJsp6:_idcl'].value='';
+		f.target='';
+	}
+	
+	clearFormHiddenParams__idJsp6();}
+
+//]]></script></div></div></div>
+	
+</body></html>

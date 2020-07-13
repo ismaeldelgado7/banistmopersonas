@@ -1,0 +1,1978 @@
+<html dir="ltr"><head><link href="/KronerPA/jhx/css/uics.css" rel="stylesheet" type="text/css" media="all"><link href="/KronerPA/jhx/css/onehsbc/theme.css" rel="stylesheet" type="text/css" media="all"><!--[if IE 8]><link href="/KronerPA/jhx/css/ieSupport/uics-ie8.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 7]><link href="/KronerPA/jhx/css/ieSupport/uics-ie7.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 6]><link href="/KronerPA/jhx/css/ieSupport/uics-ie6.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 6]><link href="/jhx/css/ieSupport/theme-ie6.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><link href="/KronerPA/jhx/css/onehsbc/layout.css" rel="stylesheet" type="text/css" media="all"><link href="/KronerPA/jhx/css/kroner_custom.css" rel="stylesheet" type="text/css" media="all"><script src="/KronerPA/jhx/js/scriptaculous/lib/prototype.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/scriptaculous/src/scriptaculous.js" type="text/javascript"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/builder.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/effects.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/dragdrop.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/controls.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/slider.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/sound.js"></script><script src="/KronerPA/jhx/js/uics.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/tablekit.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/menus.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/calendar.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/panels.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/form.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/resizable.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/listBuilder.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/insertableContent.js" type="text/javascript"></script><!--[if IE 6]><script src="/KronerPA/jhx/js/uics-ie6.js" type="text/javascript"></script><![endif]--><script src="/KronerPA/jhx/js/jhx/jhx_action.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/jhx/jhx_clientValidators.js" type="text/javascript"></script><title>Página de Inicio de Kroner</title>
+			<script type="text/javascript">
+			function alteraValor(selectedItemValue, nombreCampo) {
+				nombreCampo.value = selectedItemValue;
+			}
+			function showElements(formName, ElementsArray, valueToEval, elemType){
+				formContainer = document.forms[formName];
+				for(i=0;i<document.getElementsByTagName(elemType).length;i++){
+					if(document.getElementsByTagName(elemType)[i].id){
+						for(a=0;a<ElementsArray.length;a++){
+							if(formName+':'+ElementsArray[a][0] == document.getElementsByTagName(elemType)[i].id){
+								document.getElementsByTagName(elemType)[i].style.display = 'none';
+							}
+						}
+					}
+				}
+				for(i=0;i<document.getElementsByTagName(elemType).length;i++){
+					if(document.getElementsByTagName(elemType)[i].id){
+						for(a=0;a<ElementsArray.length;a++){
+							if(formName+':'+ElementsArray[a][0] == document.getElementsByTagName(elemType)[i].id){
+								for(b=1;b<ElementsArray[a].length;b++){
+									if(ElementsArray[a][b] == valueToEval){
+										document.getElementsByTagName(elemType)[i].style.display = 'block';
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			 function cambiaValor(selectedItemValue, nombreCampo) {
+                 if (nombreCampo.type == "select-one") {
+                     var i = 1;
+                     var band = 0;
+                     while (i < nombreCampo.length) {
+                         if (selectedItemValue.value == nombreCampo[i].value) {
+                             nombreCampo.value = selectedItemValue.value;
+                             band = 1;
+                             return;
+                         }
+                         i++;
+                     }
+                     if (band == 0) {
+                         selectedItemValue.value = "";
+                         nombreCampo.value = nombreCampo[0].value;
+                     }
+                 } else if (nombreCampo.type == "text") {
+                     nombreCampo.value = selectedItemValue;
+                 }
+             }
+		</script>
+		<script type="text/javascript" src="/KronerPA/jhx/js/kroner/kroner.js"></script>
+		</head>
+		<body class="cs csV-3 csInterstitial-init csFormChange-init" lang="default"><div id="interstitial"><p>Loading, please wait...</p></div><div class="oh" lang="default"><div id="csFader" class="csClick csFader csHide"></div><div id="csContainer" class="csFixedLayout csCenterLayout" lang="default"><div id="csContainerWrap" class="csLayoutNoSideBar" lang="default"><div id="csContainerCalendar"><div class="csPanelCover"></div><div id="csPanelCalendar"><div class="csChevron csChevronTop" id="csCalendarChevron"></div></div></div><div id="csPanelHint"><div id="csPanelHintWrap"><div class="csPanel csPanelHint"><div class="csPanelTopLeft"><div class="csPanelTopRight"><div class="csPanelContent"><div id="csPanelHintScroll" class="csPanelScroll"></div></div></div></div><div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div><div id="csHintChevron" class="csChevron csChevronTop"></div></div></div></div><div id="csSearchNSelect" class="csNav-x csMenu-x csClick csAccordian csSearchNSelect"> <div class="csPanelCover"></div>    <ul class="csNavList"><li class="csNavToggle-0 csNavFirst csMenuContextual csNavShow"><div id="csSearchNSelectContent" class="csNavContent"><div class="csPanel"><div class="csPanelTopLeft"><div class="csPanelTopRight"><div class="csPanelContent"><div id="csSearchNSelectScroll" class="csPanelScroll"></div></div></div></div><div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div></div></div></li></ul></div>  <div id="csMenuContextual" class="csNav-x csMenu-x csClick csAccordian csMenuContextual"> <div class="csPanelCover"></div>  <ul class="csNavList"><li class="csNavToggle-0 csNavFirst csMenuContextual csNavShow"><div id="csMenuContextualContent" class="csNavContent"><div class="csPanel"><div class="csPanelTopLeft"><div class="csPanelTopRight"><div class="csPanelContent"><div id="csMenuContextualScroll" class="csPanelScroll"></div></div></div></div><div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div></div></div></li></ul> </div>
+			<div id="_idJsp8" class="csColumns" lang="default"><div class="csColumnsWrap" lang="default">
+				
+					
+
+<style type="text/css">
+.csV-3 .oh #csMenuGlobal-x .csNav-0 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-1 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-2 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-3 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-4 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-5 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-6 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-7 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-8 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-9 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-10 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-11 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-12 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-13 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-14 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-15 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-16 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-17 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-18 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-19 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-20 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh #csMenuGlobal-x .csNav-21 {
+	left: auto;
+	position: relative;
+	width: auto;
+	font-size: 9px;
+	font: tahoma;
+}
+
+.csV-3 .oh .csMenuGlobal-x .csNavWrap a,.csV-3 .oh .csMenuGlobal-x .csNavWrap a:hover
+	{
+	color: #FFFFFF;
+	height: 10px;
+	padding-bottom: 9px;
+	padding-left: 2px;
+	padding-right: 10px;
+	padding-top: 10px;
+}
+
+#csMast {
+	background-image: none;
+}
+
+#csMastWrap {
+	width: 1010px;
+}
+
+div.csColumnsWrap {
+	margin-top: 0;
+	width: 1000px;
+}
+
+.csV-3 .oh .csTabs-x .csNavWrap {
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 5px;
+}
+
+.csV-3 .csNav-x li.csNavToggle-0,.csV-3 .csNav-x li.csNavItem-0 {
+	font-size: 10px;
+}
+</style>
+	<script language="JavaScript">
+	
+	var bajb_backdetect={Version:'1.0.0',Description:'Back Button Detection',Browser:{IE:!!(window.attachEvent&&!window.opera),Safari:navigator.userAgent.indexOf('Apple')>-1,Opera:!!window.opera},FrameLoaded:0,FrameTry:0,FrameTimeout:null,OnBack:function(){alert('Back Button Clicked')},BAJBFrame:function(){var BAJBOnBack=document.getElementById('BAJBOnBack');if(bajb_backdetect.FrameLoaded>1){if(bajb_backdetect.FrameLoaded==2){bajb_backdetect.OnBack();history.back()}}bajb_backdetect.FrameLoaded++;if(bajb_backdetect.FrameLoaded==1){if(bajb_backdetect.Browser.IE){bajb_backdetect.SetupFrames()}else{bajb_backdetect.FrameTimeout=setTimeout("bajb_backdetect.SetupFrames();",700)}}},SetupFrames:function(){clearTimeout(bajb_backdetect.FrameTimeout);var BBiFrame=document.getElementById('BAJBOnBack');var checkVar=BBiFrame.src.substring(-11,11);if(bajb_backdetect.FrameLoaded==1&&checkVar!="HistoryLoad"){BBiFrame.src="blank.html?HistoryLoad"}else{if(bajb_backdetect.FrameTry<2&&checkVar!="HistoryLoad"){bajb_backdetect.FrameTry++;bajb_backdetect.FrameTimeout=setTimeout("bajb_backdetect.SetupFrames();",700)}}},SafariHash:'false',Safari:function(){if(bajb_backdetect.SafariHash=='false'){if(window.location.hash=='#b'){bajb_backdetect.SafariHash='true'}else{window.location.hash='#b'}setTimeout("bajb_backdetect.Safari();",100)}else if(bajb_backdetect.SafariHash=='true'){if(window.location.hash==''){bajb_backdetect.SafariHash='back';bajb_backdetect.OnBack();history.back()}else{setTimeout("bajb_backdetect.Safari();",100)}}},Initialise:function(){if(bajb_backdetect.Browser.Safari){setTimeout("bajb_backdetect.Safari();",600)}else{document.write('<iframe src="blank.html" style="display:none;" id="BAJBOnBack" onunload="alert(\'de\')" onload="bajb_backdetect.BAJBFrame();"></iframe>')}}};bajb_backdetect.Initialise();
+				
+				var validAccessJS = String(true);
+
+                bajb_backdetect.OnBack = function() {
+	              	if( validAccessJS == 'null'){
+						goLogin();
+	                }
+                }
+                
+                if(validAccessJS == 'null'){
+					goLogin();
+                }
+                window.history.forward(1);
+                document.addEventListener("keydown", my_onkeydown_handler, false);
+                function my_onkeydown_handler(e) {
+                    var keyCode = e.keyCode;
+                    switch (keyCode) {
+                    case 116: // 'F5'
+                        e.preventDefault();
+                        break;
+                    }
+                }
+
+                document.onkeydown = function () {
+                    if(event.ctrlKey && event.keyCode == 78 ){
+                        return false;
+                    }
+                }
+				
+				function goLogin(){
+					var urlNueva = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname.split("/")[1] + "/pages/error/SesionInvalida.jsf?cmd_logoffTimeOut=1";
+						window.location.replace(urlNueva);
+				}
+				
+	</script>
+
+
+
+	
+		
+		
+
+		
+			
+				
+				
+			
+			
+				
+					
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					
+				
+			
+				
+					
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					
+				
+			
+				
+					
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					
+				
+			
+				
+					
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+							
+						
+					
+				
+			
+				
+					
+						
+							
+						
+							
+						
+							
+						
+					
+				
+			
+			
+			
+
+		
+	
+
+					
+
+
+	
+
+		
+			
+		
+
+		
+			
+		
+
+		
+			
+		
+
+		
+			
+				
+			
+			
+				
+			
+		
+
+		
+			
+		
+
+		
+			
+		
+
+		
+			
+				
+				
+			
+		
+
+		
+		    
+			
+		
+
+	
+
+	
+
+	
+		
+
+		
+			
+			
+				
+					
+					
+
+					
+						
+							
+							
+						
+					
+				
+			
+			
+
+		
+	
+
+				<form id="_idJsp9" name="_idJsp9" class="csForm csMsgs-x" method="post" autocomplete="off" action="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf" target=""><div id="csMast"><div id="csMastWrap"><div id="csMenuUtility-x" class="csNav-x csClick csMenuUtility-x csAccordian"><ul class="csNavList"></ul></div><div id="csLogo"><img id="_idJsp9:_idJsp13" src="/KronerPA/images/hsbclogo_localbank.gif"></div><div id="csTabsMast" class="csNav-x csTabs-x csOver csTabsMast" data-csnodestotoggle="div._idJsp9__idJsp14"><div class="csHideForSR">Screen Reader description for menu.<a href="#postMenu">Skip this menu.</a></div><ul class="csNavList"><li class="csNavItem-0 csNavFirst csNavOn"><div class="csNavWrap"><a id="_idJsp9:AUXILIAR" class="csTabToggle" href="#">.</a></div></li><li class="csNavItem-0"><div class="csNavWrap"><a id="_idJsp9:_idJsp16" class="csTabToggle" href="#">OPERACION</a></div></li><li class="csNavItem-0"><div class="csNavWrap"><a id="_idJsp9:_idJsp29" class="csTabToggle" href="#">CONSULTA</a></div></li><li class="csNavItem-0"><div class="csNavWrap"><a id="_idJsp9:_idJsp43" class="csTabToggle" href="#">CONTABLE</a></div></li><li class="csNavItem-0"><div class="csNavWrap"><a id="_idJsp9:_idJsp50" class="csTabToggle" href="#">CATALOGOS</a></div></li><li class="csNavItem-0 csNavLast"><div class="csNavWrap"><a id="_idJsp9:_idJsp58" class="csTabToggle" href="#">CLIENTES</a></div></li></ul></div><div class="csHideForSR"><a name="postMenu"></a></div><div class="csContentModule csShow _idJsp9__idJsp14"><div id="csMenuGlobal-x" class="csNav-x csMenuGlobal-x csAccordian csClick csAccordian"><ul class="csNavList"></ul></div></div><div class="csContentModule _idJsp9__idJsp14"><div id="csMenuGlobal-x" class="csNav-x csMenuGlobal-x csAccordian csClick csAccordian"><ul class="csNavList"><li class="csNavItem-0 csNavFirst csNav-0"><div class="csNavWrap"><a id="_idJsp9:_idJsp18" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_edocc=">EDOCC</a></div></li><li class="csNavItem-0 csNav-1"><div class="csNavWrap"><a id="_idJsp9:_idJsp19" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?cmd_chist=&amp;jsf_sequence=6">CHIST</a></div></li><li class="csNavItem-0 csNav-2"><div class="csNavWrap"><a id="_idJsp9:_idJsp20" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_optabam=">TABAM</a></div></li><li class="csNavItem-0 csNav-3"><div class="csNavWrap"><a id="_idJsp9:_idJsp21" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?cmd_ope_reest=&amp;jsf_sequence=6">REEST</a></div></li><li class="csNavItem-0 csNav-4"><div class="csNavWrap"><a id="_idJsp9:_idJsp22" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_op_modif=">MODIF</a></div></li><li class="csNavItem-0 csNav-5"><div class="csNavWrap"><a id="_idJsp9:_idJsp23" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_ope_ajust=">AJUST</a></div></li><li class="csNavItem-0 csNav-6"><div class="csNavWrap"><a id="_idJsp9:_idJsp24" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_ope_apert=">APERT</a></div></li><li class="csNavItem-0 csNav-7"><div class="csNavWrap"><a id="_idJsp9:_idJsp25" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?cmd_ope_formu=&amp;jsf_sequence=6">FORMU</a></div></li><li class="csNavItem-0 csNav-8"><div class="csNavWrap"><a id="_idJsp9:_idJsp26" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_ope_recon=">RECON</a></div></li><li class="csNavItem-0 csNav-9"><div class="csNavWrap"><a id="_idJsp9:_idJsp27" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_ope_cprel=">CPREL</a></div></li><li class="csNavItem-0 csNavLast csNav-10"><div class="csNavWrap"><a id="_idJsp9:_idJsp28" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_ope_dfijo=">DFIJO</a></div></li></ul></div></div><div class="csContentModule _idJsp9__idJsp14"><div id="csMenuGlobal-x" class="csNav-x csMenuGlobal-x csAccordian csClick csAccordian"><ul class="csNavList"><li class="csNavItem-0 csNavFirst csNav-0"><div class="csNavWrap"><a id="_idJsp9:_idJsp31" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_con_caven=">CAVEN</a></div></li><li class="csNavItem-0 csNav-1"><div class="csNavWrap"><a id="_idJsp9:_idJsp32" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_con_calcu=">CALCU</a></div></li><li class="csNavItem-0 csNav-2"><div class="csNavWrap"><a id="_idJsp9:_idJsp33" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_con_ccred=">CCRED</a></div></li><li class="csNavItem-0 csNav-3"><div class="csNavWrap"><a id="_idJsp9:_idJsp34" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_con_cxcte=">CXCTE</a></div></li><li class="csNavItem-0 csNav-4"><div class="csNavWrap"><a id="_idJsp9:_idJsp35" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_con_cnomb=">CNOMB</a></div></li><li class="csNavItem-0 csNav-5"><div class="csNavWrap"><a id="_idJsp9:_idJsp36" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_con_riesgo=">RIESGO</a></div></li><li class="csNavItem-0 csNav-6"><div class="csNavWrap"><a id="_idJsp9:_idJsp37" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_con_ctotu=">CTOTU</a></div></li><li class="csNavItem-0 csNav-7"><div class="csNavWrap"><a id="_idJsp9:_idJsp38" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_con_hiscr=">HISCR</a></div></li><li class="csNavItem-0 csNav-8"><div class="csNavWrap"><a id="_idJsp9:_idJsp39" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_con_deduc=">DEDUC</a></div></li><li class="csNavItem-0 csNav-9"><div class="csNavWrap"><a id="_idJsp9:_idJsp40" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_con_edoimp=">EDOIM</a></div></li><li class="csNavItem-0 csNav-10"><div class="csNavWrap"><a id="_idJsp9:_idJsp41" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_con_flexi=">FLEXI</a></div></li><li class="csNavItem-0 csNavLast csNav-11"><div class="csNavWrap"><a id="_idJsp9:_idJsp42" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?cmd_con_clin=&amp;jsf_sequence=6">CLIN</a></div></li></ul></div></div><div class="csContentModule _idJsp9__idJsp14"><div id="csMenuGlobal-x" class="csNav-x csMenuGlobal-x csAccordian csClick csAccordian"><ul class="csNavList"><li class="csNavItem-0 csNavFirst csNav-0"><div class="csNavWrap"><a id="_idJsp9:_idJsp45" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_ctb_aplic=">APLIC</a></div></li><li class="csNavItem-0 csNav-1"><div class="csNavWrap"><a id="_idJsp9:_idJsp46" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_ctb_ctrls=">CTRLS</a></div></li><li class="csNavItem-0 csNav-2"><div class="csNavWrap"><a id="_idJsp9:_idJsp47" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_ctb_ctaco=">CTACO</a></div></li><li class="csNavItem-0 csNav-3"><div class="csNavWrap"><a id="_idJsp9:_idJsp48" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_ctb_derra=">DERRA</a></div></li><li class="csNavItem-0 csNavLast csNav-4"><div class="csNavWrap"><a id="_idJsp9:_idJsp49" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_ctb_condi=">CONDI</a></div></li></ul></div></div><div class="csContentModule _idJsp9__idJsp14"><div id="csMenuGlobal-x" class="csNav-x csMenuGlobal-x csAccordian csClick csAccordian"><ul class="csNavList"><li class="csNavItem-0 csNavFirst csNav-0"><div class="csNavWrap"><a id="_idJsp9:_idJsp52" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_cat_abase=">ABASE</a></div></li><li class="csNavItem-0 csNav-1"><div class="csNavWrap"><a id="_idJsp9:_idJsp53" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_initAcamb=">ACAMB</a></div></li><li class="csNavItem-0 csNav-2"><div class="csNavWrap"><a id="_idJsp9:_idJsp54" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?cmd_cat_catgr=&amp;jsf_sequence=6">CATGR</a></div></li><li class="csNavItem-0 csNav-3"><div class="csNavWrap"><a id="_idJsp9:_idJsp55" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?cmd_cat_nmontBegin=&amp;jsf_sequence=6">NMONT</a></div></li><li class="csNavItem-0 csNav-4"><div class="csNavWrap"><a id="_idJsp9:_idJsp56" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_cat_paises=">PAISES</a></div></li><li class="csNavItem-0 csNavLast csNav-5"><div class="csNavWrap"><a id="_idJsp9:_idJsp57" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_cat_calen=">CALEN</a></div></li></ul></div></div><div class="csContentModule _idJsp9__idJsp14"><div id="csMenuGlobal-x" class="csNav-x csMenuGlobal-x csAccordian csClick csAccordian"><ul class="csNavList"><li class="csNavItem-0 csNavFirst csNav-0"><div class="csNavWrap"><a id="_idJsp9:_idJsp60" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_cte_consultas=">CONSULTAS</a></div></li><li class="csNavItem-0 csNav-1"><div class="csNavWrap"><a id="_idJsp9:_idJsp61" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?cmd_cte_mtto=&amp;jsf_sequence=6">MTTO</a></div></li><li class="csNavItem-0 csNavLast csNav-2"><div class="csNavWrap"><a id="_idJsp9:_idJsp62" class="csNavToggle" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_cte_codeu=">ALTA CODEU</a></div></li></ul></div></div></div></div><br><br><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 240px;" class="csLabels"><col style="width: 150px;" class="csFields"><col style="width: 120px;" class="csLabels"><col style="width: 100px;" class="csFields"><col style="width: 150px;" class="csLabels"><col style="width: 135px;" class="csFields"><col style="width: 20px;" class="csLabels"><col style="width: 50px;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:left"><small>Usuario: </small><strong><small>ARCIA QUIROS AGUSTIN                              </small></strong></div></td><td><div class="csFields" style="text-align:left"><small>Ambiente: </small><strong><small>UAT</small></strong></div></td><td class="csLabel"><div class="csLabel" style="text-align:left"><small>Rol: </small><strong><small>GERENTE DE OPERACIONES                                      </small></strong></div></td><td><div class="csFields" style="text-align:right"><input id="_idJsp9:command" name="_idJsp9:command" type="text" size="5" maxlength="5" class="csTextField" value="" title="Nombre de servicio"><a id="_idJsp9:_idJsp73" name="_idJsp9:_idJsp73" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_launch_service=" class="csAct"><strong><small>IR A</small></strong></a></div></td><td class="csLabel"><div class="csLabel" style="text-align:left"><small>Calc </small><small>Com </small><strong><small>116</small></strong><small>Hip </small><strong><small>9/0</small></strong><small>Ver.</small><strong><small>1.0</small></strong></div></td><td><div class="csFields" style="text-align:left"><small>Fecha: </small><strong><small>17/Junio/2020</small></strong></div></td><td class="csLabel"><div class="csLabel" style="text-align:left"><span class="csIcon csHintIcon"><a data-csoverlayorigin="window" data-cssetpanelwidth="400" data-csnodestotoggle="#panelLightBox" data-cslightbox="true" data-cscontentfromnode=".MyFormInsertableContent" href="#" class="csOverlayToggle csClick" title="Salir"><img id="_idJsp9:_idJsp81" class="csOverlayToggle csClick" data-cscontentfromnode=".MyFormInsertableContent" data-csoverlayorigin="window" data-csnodestotoggle="#panelOverlay" data-cslightbox="true" data-cssetpanelwidth="400" src="/KronerPA/images/iconViewCheckImage.gif" title="Salir" alt="Salir"></a><span class="csIconAlt">?</span></span></div></td><td><div class="csFields" style="text-align:left"><small>Ver.<strong>1.7.9 FSC</strong></small></div></td></tr></tbody></table></fieldset><br><br><div id="_idJsp9:MyFormInsertableContent" class="csHide MyFormInsertableContent"><h3 class="csPanelHeadingLocal"><strong><small><small>Desea salir de la aplicación?</small></small></strong></h3><div class="csPanelContentLocal"><br><br><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 350px;" class="csLabels"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:center"><span class="csButtonWrap csOverlayClose csClick"><input id="_idJsp9:_idJsp91" type="reset" class="csButton csOverlayClose csClick" value="Cancelar"></span> &nbsp;&nbsp;&nbsp;&nbsp;<a id="_idJsp9:_idJsp93" name="_idJsp9:_idJsp93" href="cmd_logoffMain" title="hsbc site"><span class="csButtonWrap csAct"></span></a><a id="_idJsp9:idSalir" name="_idJsp9:idSalir" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_logoffMain=" class="csButton csAct">Aceptar</a></div></td></tr></tbody></table></fieldset><div class="csButtons csRow"></div></div></div><input type="hidden" name="_idJsp9_SUBMIT" value="1"><input type="hidden" name="jsf_sequence" value="6"><input type="hidden" name="_idJsp9:_idcl" value=""></form>
+				
+					
+                        
+							
+								
+									
+										
+										
+									
+								
+							
+							
+								
+								
+										
+											
+												
+											
+											
+												
+													
+												
+												
+											
+											
+												
+											
+											
+												
+												    	
+													
+													
+														
+													
+											
+										
+
+								
+									
+									
+										
+											
+											
+											
+											
+										
+										
+										
+											
+										
+										
+									
+									
+								
+										
+											
+												
+											
+											
+												
+											
+											
+												
+											
+											
+												
+											
+										
+
+								
+									
+									
+										
+											
+										
+									
+								
+
+								
+									
+										
+											
+												
+													
+												
+											
+										
+									
+									
+									
+
+									
+									
+										
+											
+										
+										
+									
+									
+										
+											
+												
+													
+												
+												
+												
+													
+												
+												
+													
+												
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+														
+													
+												
+												
+												
+													
+														
+													
+												
+												
+												
+													
+												
+												
+											
+										
+										
+											
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+												
+												
+												
+													
+												
+												
+											
+										
+									
+									
+										
+											
+												
+													
+												
+												
+												
+													
+												
+												
+												   	
+												  
+												
+													
+												
+												
+												
+													
+														
+													
+												
+												
+												
+												    
+													   
+                                                    
+												
+												
+											
+										
+										
+											
+												
+													
+												
+												
+												
+													
+												
+												
+												
+												    
+													   
+												    
+												
+												
+												
+												    
+													   
+					                                
+												
+												
+											
+										
+									
+									
+										
+											
+										
+										
+											
+										
+									
+									
+										
+											
+												
+													
+												
+												
+											
+										
+										
+											
+										
+									
+									
+										
+											
+										
+										
+											
+										
+									
+                                    
+                                        
+									       
+								       
+									
+									
+									
+										
+											
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+													
+														
+													
+												
+												
+													
+														
+															
+														
+													
+												
+											
+											
+												
+													
+														
+													
+												
+												
+												    
+	                                                   
+	                                                
+	                                            
+												
+    												
+														
+															
+														
+													
+												
+												
+                                                    
+                                                        
+                                                    
+                                                
+												
+												    
+														
+															
+														
+													
+												
+												
+                                                    
+                                                        
+                                                    
+                                                
+												
+													
+														
+															
+														
+													
+												
+												
+                                                    
+                                                        
+                                                    
+                                                
+												
+												    
+														
+															
+														
+													
+												
+												
+                                                    
+                                                        
+                                                    
+                                                
+												
+												    
+														
+															
+														
+													
+												
+												
+                                                    
+                                                        
+                                                    
+                                                
+												
+                                                    
+                                                        
+															
+														
+												    
+												
+												
+                                                    
+                                                        
+                                                    
+                                                
+												
+												    
+														
+															
+														
+													
+												
+												
+													
+														
+													
+												
+												
+													
+														
+															
+														
+													
+												
+												
+                                                    
+                                                        
+                                                    
+                                                
+												
+													
+														
+															
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+											
+										
+										
+											
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+													
+														
+													
+												
+												
+													
+														
+															
+														
+													
+												
+												
+													
+														
+													
+												
+												
+													
+														
+															
+														
+													
+												
+												
+													
+														
+													
+												
+												
+													
+														
+															
+														
+													
+												
+											
+											
+												
+													
+														
+													
+												
+												
+													
+														
+													
+												
+												
+												    
+														
+															
+														
+													
+												
+												
+													
+														
+													
+												
+												
+												    
+														
+															
+														
+													
+												
+												
+													
+														
+													
+												
+												
+												    
+														
+															
+														
+													
+												
+												
+													
+														
+													
+												
+												
+												    
+														
+															
+														
+													
+												
+												
+													
+														
+													
+												
+												
+												    
+														
+															
+														
+													
+												
+												
+													
+														
+													
+                                                
+												
+												    
+														
+															
+														
+													
+												
+												
+													
+														
+													
+												
+												
+												    
+														
+															
+														
+													
+												
+												
+													
+														
+													
+												
+												
+												    
+														
+															
+														
+													
+												
+																									
+                                                    
+                                                    
+                                                
+												
+												
+													
+														
+													
+													
+												
+												
+                                                    
+                                                
+												
+												
+													
+														
+													
+													
+												
+												
+                                                    
+                                                
+												
+												
+													
+														
+													
+													
+												
+												
+                                                    
+                                                
+												
+												
+													
+														
+													
+													
+												
+												
+                                                    
+                                                
+												
+												
+													
+														
+													
+													
+												
+												
+                                                    
+                                                
+												
+												
+													
+														
+													
+													
+												
+												
+                                                    
+                                                
+												
+												
+													
+														
+													
+													
+												
+												
+                                                    
+                                                
+												
+												
+													
+														
+													
+													
+												
+											
+										
+									
+									
+									
+										
+											
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+													
+														
+													
+												
+												
+												    
+														
+															
+														
+													
+												
+											
+											
+												
+													
+														
+													
+												
+												
+													
+														
+													
+												
+												
+												    
+														
+															
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+											
+										
+										
+											
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+												
+                                                    
+                                                
+												
+													
+														
+													
+												
+											
+										
+									
+
+									
+										
+											
+                                                
+												    
+											     
+											     
+										
+									
+									
+										
+											
+											
+										
+										
+											
+											
+										
+										
+											
+										
+									
+								
+							
+						
+						
+							
+								
+									
+										
+											
+
+
+
+
+
+	
+		
+				
+					
+						
+                        
+					
+				
+				
+				
+				
+				
+				
+				
+								
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+        
+				
+				
+					
+						
+                        
+					
+				
+				
+				
+				
+				
+				
+								
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+        
+				
+				
+				
+					
+						
+                        
+					
+				
+				
+				
+				
+				
+								
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+        
+				
+				
+				
+				
+					
+						
+                        
+					
+				
+				
+				
+				
+								
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+        
+				
+				
+				
+				
+				
+					
+						
+                        
+					
+				
+				
+				
+								
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+        
+				
+				
+				
+				
+				
+				
+					
+						
+                        
+					
+				
+				
+								
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+        
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+                        
+					
+								
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+        
+				
+				
+				
+				
+				
+				
+				
+								
+				
+					
+						
+                        
+					
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+        
+				
+				
+				
+				
+				
+				
+				
+					
+						
+                        
+					
+				
+								
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+        
+				
+				
+				
+				
+				
+				
+				
+								
+				
+				
+
+				
+					
+						
+                        
+					
+				
+				
+				
+				
+				
+				
+				
+				
+        
+				
+				
+				
+				
+				
+				
+				
+								
+				
+				
+
+				
+				
+				
+					
+						
+                        
+					
+				
+				
+				
+				
+				
+				
+        
+				
+				
+				
+				
+				
+				
+				
+								
+				
+				
+
+				
+				
+				
+				
+					
+						
+                        
+					
+				
+				
+				
+				
+				
+        
+				
+				
+				
+				
+				
+				
+				
+								
+				
+				
+
+				
+				
+				
+				
+				
+					
+						
+                        
+					
+				
+				
+				
+				
+        
+				
+				
+				
+				
+				
+				
+				
+								
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+					
+						
+                        
+					
+				
+				
+        
+				
+				
+				
+				
+				
+				
+				
+								
+				
+				
+
+				
+				
+				
+				
+				
+				
+				
+				
+					
+						
+                        
+					
+				
+        
+    
+
+										
+									
+								
+							
+							
+						
+					
+				<div id="_idJsp97" class="csRow csCols-2" lang="default"><div id="_idJsp98" style="width: 1000px;" class="csCol-1" lang="default"><div id="printSection" style="width: 520px;" class="csCol-1" lang="default"><div class="csHeading csHeadingRule"><h3><strong>Estado de Cuenta</strong></h3><div class="csHeadingCol"><div class="csNav-x"><ul class="csNavList"><li class="csIconPrint csNavItem-0 csNavIcon print csNavFirst csNavLast"><div class="csNavItem-0"><a id="_idJsp101" href="#">Imprimir</a></div></li></ul></div></div></div><form id="frmEdoccMain" name="frmEdoccMain" class="csForm csMsgs-x csCalendar-init csPlaceholder-init" method="post" autocomplete="off" action="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf" lang="default" target=""><fieldset lang="default"><table cellspacing="0" class="csTableForm" lang="default"><colgroup><col style="width: 130px;" class="csLabels"><col style="width: 100px;" class="csFields"><col style="width: 170px;" class="csLabels"><col style="width: 90px;" class="csFields"></colgroup><tbody lang="default"><tr lang="default"><td class="csLabel"><div class="csLabel" style="text-align:left"><label id="frmEdoccMain:_idJsp108" for="frmEdoccMain:numeroCredito"><b>Número de Crédito</b><span class="csRequired"><span class="csRequiredText">is required</span></span></label></div></td><td lang="default"><div class="csFields" style="text-align:left" lang="default"><input id="frmEdoccMain:numeroCredito" name="frmEdoccMain:numeroCredito" type="text" size="9" maxlength="8" data-cspattern="########" class="csTextField csVal-required csFormat csFormat-init" value="490710" lang="default" title="########"><div class="csErrorLocal"><p class="csVal-required">Número de Crédito es requerido</p></div></div></td><td class="csLabel"><div class="csLabel" style="text-align:left"><label id="frmEdoccMain:_idJsp113" for="frmEdoccMain:dateTextfield_short"><b>Fecha (dd/mm/aaaa)</b><span class="csRequired"><span class="csRequiredText">is required</span></span></label></div></td><td lang="default"><div class="csFields" style="text-align:left" lang="default"><div class="csCalendar-wrapper csVal-required" lang="default"><div class="csCalendarInput" lang="default"><div class="csCalendarInputWrap" lang="default"><input id="frmEdoccMain:dateTextfield_short" name="frmEdoccMain:dateTextfield_short_NameForJS" type="text" data-cspattern="DD/MM/YYYY" data-csoverlaycontextnode="div.csFields" data-csplaceholder="DD/MM/YYYY" class="csTextField csVal-required csCalendar csPlaceholder csCalendar-init csVal-isCalendarSpaces csVal-isCalendarRange csPlaceholder-init" size="10" maxlength="10" value="17/06/2020" lang="default" title="DD/MM/YYYY" autocomplete="off" data-cscalendarrangemax="20210617" data-cscalendarrangemin="20190617"><input name="frmEdoccMain:dateTextfield_short_JsEnabled" type="hidden" class="csTextField csJSEnabled csVal-required csJSEnabled-init" value="true"><div class="csIconCalendar"><a class="csIconCalendar" href="#"></a></div><div class="csCalendarNoJs"><label class="csDay" for="frmEdoccMain:dateTextfield_short:day"><select id="frmEdoccMain:dateTextfield_short:day" name="frmEdoccMain:dateTextfield_short" class="csField-short csVal-required"><option value="NONE">Day</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17" selected="selected">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select><span class="csHideForSR">Day</span></label><label class="csMonth" for="frmEdoccMain:dateTextfield_short:month"><select id="frmEdoccMain:dateTextfield_short:month" name="frmEdoccMain:dateTextfield_short" class="csField-short csVal-required"><option value="NONE">Month</option><option value="enero">enero</option><option value="febrero">febrero</option><option value="marzo">marzo</option><option value="abril">abril</option><option value="mayo">mayo</option><option value="junio" selected="selected">junio</option><option value="julio">julio</option><option value="agosto">agosto</option><option value="septiembre">septiembre</option><option value="octubre">octubre</option><option value="noviembre">noviembre</option><option value="diciembre">diciembre</option></select><span class="csHideForSR">Month</span></label><label class="csYear" for="frmEdoccMain:dateTextfield_short:year"><input id="frmEdoccMain:dateTextfield_short:year" type="text" name="frmEdoccMain:dateTextfield_short" value="2020" size="4" maxlength="4" class="csField-short csVal-required"><span class="csHideForSR">Year</span></label></div></div></div><div class="csPanel csPanelCalendar "></div></div><div class="csErrorLocal"><p class="csVal-required">Fecha (dd/mm/aaaa) es requerido</p></div></div></td></tr></tbody></table></fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 100px;" class="csLabels"><col style="width: 150px;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel"></div></td><td><div class="csFields"><a id="frmEdoccMain:_idJsp120" name="frmEdoccMain:_idJsp120" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?sistema=0&amp;jsf_sequence=6&amp;cmd_edoccFind=&amp;valorizar=0&amp;fifo=0" class="csButton csAct">BUSCAR</a></div></td></tr></tbody></table><div id="frmEdoccMain:_idJsp141"><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 70px;" class="csLabels"><col style="width: 142px;" class="csFields"><col style="width: 138px;" class="csLabels"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel"><fieldset id="frmEdoccMain:_idJsp143" class="csLeft"><a id="frmEdoccMain:_idJsp145" name="frmEdoccMain:_idJsp145" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_edoccComent=" class="csButton csAct">COMENTARIOS</a></fieldset></div></td><td>&nbsp;</td><td class="csLabel">&nbsp;</td></tr></tbody></table></fieldset><div class="csHeading csHeadingRule"><h5><strong>Información General</strong></h5></div><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 90px;" class="csLabels"><col style="width: 300px;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Cliente</b> </div></td><td><div class="csFields">99012492 *FASHION FOOTWEAR UNLIMITED,S.A.        </div></td></tr></tbody></table></fieldset><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 260px;" class="csLabels"><col style="width: 240px;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel"><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 90px;" class="csLabels"><col style="width: 170px;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Crédito</b></div></td><td><div class="csFields">490710</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Importe</b></div></td><td><div class="csFields">$1,565,000.00</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Sucursal</b></div></td><td><div class="csFields">1021 MEDIANA EMPRESA METRO                   </div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Empresa</b></div></td><td><div class="csFields">24 BANISTMO S.A.       </div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Status</b></div></td><td><div class="csFields">1 VIGENTE   </div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Moneda</b></div></td><td><div class="csFields">USD DOLAR           </div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Cta. de Cheques</b></div></td><td><div class="csFields">01-1442114-3</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Cuenta Origen</b></div></td><td><div class="csFields">1009-01-02-02</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Modalidad</b></div></td><td><div class="csFields">140100 PRESTAMO COMERCIAL                                          </div></td></tr></tbody></table></fieldset></div></td><td><div class="csFields"><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 150px;" class="csLabels"><col style="width: 90px;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Solicitado al:</b></div></td><td><div class="csFields">17/JUN/2020</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Fecha Primer Pago:</b></div></td><td><div class="csFields">16/SEP/2018</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Fecha de Alta:</b></div></td><td><div class="csFields">16/AGO/2018</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Fecha de Vencimiento:</b></div></td><td><div class="csFields">16/AGO/2023</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Próxima Amortización:</b></div></td><td><div class="csFields">16/JUL/2020</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Próximo Interés:</b></div></td><td><div class="csFields">16/JUL/2020</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Fecha USGAAP:</b></div></td><td><div class="csFields">14/AGO/2019</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Número de Amortización:</b></div></td><td><div class="csFields">23</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Fecha de Vencimiento Real:</b></div></td><td><div class="csFields">16/AGO/2023</div></td></tr></tbody></table></fieldset></div></td></tr></tbody></table></fieldset><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 260px;" class="csLabels"><col style="width: 240px;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel"><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 90px;" class="csLabels"><col style="width: 170px;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Tipo Cartera</b></div></td><td><div class="csFields">0014 - PRESTAMOS COMERCIALES         </div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Letra</b></div></td><td><div class="csFields">$18,373.26</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Num. Letras Adel.</b></div></td><td><div class="csFields">000</div></td></tr></tbody></table></fieldset></div></td><td><div class="csFields"><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 150px;" class="csLabels"><col style="width: 90px;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><b>Fecha Pérdida FECI</b></div></td><td><div class="csFields">31/DIC/2999</div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right">&nbsp;</div></td><td><div class="csFields"></div></td></tr></tbody></table></fieldset></div></td></tr></tbody></table></fieldset><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 400px;" class="csLabels"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:center"></div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:left"></div></td></tr></tbody></table></fieldset><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 400px;" class="csLabels"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:center"><big><strong> </strong></big></div></td></tr></tbody></table></fieldset><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 500px;" class="csLabels"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:left"><div class="csHeading csHeadingRule"><h5><b><b>Saldos del Número de Crédito</b> 490710</b></h5></div></div></td></tr></tbody></table></fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 250px;" class="csLabels"><col style="width: 250px;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel"><div class="csPanel csPanelTable"><div class="csTableTopLeft"><div class="csTableTopRight"><div class="csTableContent"><div class="csTableScroll"><table class="csTable" cellspacing="0"><colgroup><col style="width: 125px;"><col style="width: 125px;"></colgroup><thead><tr><th scope="col" colspan="2" class="csFirst csLast">SALDOS VIGENTES</th></tr></thead><tbody id="frmEdoccMain:_idJsp281:tbody_element"><tr><td style="text-align:right" class="csFirst"><b>Saldo Neto Financiado</b></td><td style="text-align:right" class="csLast">$1,362,819.75</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>SALDO INSOLUTO TOTAL</b></td><td style="text-align:right" class="csLast">$1,362,819.75</td></tr><tr><td style="text-align:right" class="csFirst"><b>Letras Adelantadas</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>Letras Atrapadas</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr><td class="csFirst"><div id="frmEdoccMain:_idJsp301" class="csRight"><b>Importe Retenido</b></div></td><td class="csLast"><div id="frmEdoccMain:_idJsp304" class="csRight">$0.00</div></td></tr></tbody></table></div></div></div></div><div class="csTableBottomLeft"><div class="csTableBottomRight"></div></div></div><div class="csPanel csPanelTable"><div class="csTableTopLeft"><div class="csTableTopRight"><div class="csTableContent"><div class="csTableScroll"><table class="csTable" cellspacing="0"><colgroup><col style="width: 125px;"><col style="width: 125px;"></colgroup><thead><tr><th scope="col" colspan="2" class="csFirst csLast">SALDOS VIGENTES EXIGIBLES</th></tr></thead><tbody id="frmEdoccMain:_idJsp307:tbody_element"><tr><td class="csFirst"><div id="frmEdoccMain:_idJsp323" class="csRight"><b>Capital</b></div></td><td class="csLast"><div id="frmEdoccMain:_idJsp326" class="csRight">$9,982.26</div></td></tr><tr class="csZebra"><td class="csFirst"><div id="frmEdoccMain:_idJsp341" class="csRight"><b>Letra Adelantada</b></div></td><td class="csLast"><div id="frmEdoccMain:_idJsp344" class="csRight">$0.00</div></td></tr><tr><td class="csFirst"><div id="frmEdoccMain:_idJsp347" class="csRight"><b>Letra Atrapada</b></div></td><td class="csLast"><div id="frmEdoccMain:_idJsp350" class="csRight">$0.00</div></td></tr><tr class="csZebra"><td class="csFirst"><div id="frmEdoccMain:_idJsp353" class="csRight"><b>FECI</b></div></td><td class="csLast"><div id="frmEdoccMain:_idJsp356" class="csRight">$37.86</div></td></tr><tr><td class="csFirst"><div id="frmEdoccMain:_idJsp359" class="csRight"><b>Interés</b></div></td><td class="csLast"><div id="frmEdoccMain:_idJsp362" class="csRight">$241.84</div></td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>Seguro Vida</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr><td style="text-align:right" class="csFirst"><b>Otro Seguro</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>Gastos</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr><td style="text-align:right" class="csFirst"><b>ITBMS Gastos</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>Comisiones</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr><td style="text-align:right" class="csFirst"><b>ITBMS Comisiones</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>TOTAL VIGENTE</b></td><td style="text-align:right" class="csLast">$10,261.96</td></tr><tr><td style="text-align:right" class="csFirst"><b>TOTAL A PAGAR</b></td><td style="text-align:right" class="csLast">$274,226.29</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>TOTAL ADEUDO</b></td><td style="text-align:right" class="csLast">$1,637,325.74</td></tr></tbody></table></div></div></div></div><div class="csTableBottomLeft"><div class="csTableBottomRight"></div></div></div></div></td><td><div class="csFields"><div class="csPanel csPanelTable"><div class="csTableTopLeft"><div class="csTableTopRight"><div class="csTableContent"><div class="csTableScroll"><table class="csTable" cellspacing="0"><colgroup><col style="width: 125px;"><col style="width: 125px;"></colgroup><thead><tr><th scope="col" colspan="2" class="csFirst csLast">OTROS SALDOS</th></tr></thead><tbody id="frmEdoccMain:_idJsp402:tbody_element"><tr><td style="text-align:right" class="csFirst"><b>Saldo Interés Anticipado</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>Saldo Feci Anticipado</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr><td style="text-align:right" class="csFirst"><b>Gastos Financiados por Cobrar</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>Comis. Financiadas por cobrar</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr><td style="text-align:right" class="csFirst"><b>Saldo Anticipado Seguro Vida</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>Saldo Anticipado Seguro Otro</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr><td style="text-align:right" class="csFirst"><b>FECI Pendiente de Cobrar.</b></td><td style="text-align:right" class="csLast">$0.00</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>Saldo x Aplicar Sig. Amortiz.</b></td><td style="text-align:right" class="csLast">$0.00</td></tr></tbody></table></div></div></div></div><div class="csTableBottomLeft"><div class="csTableBottomRight"></div></div></div><div class="csPanel csPanelTable"><div class="csTableTopLeft"><div class="csTableTopRight"><div class="csTableContent"><div class="csTableScroll"><table class="csTable" cellspacing="0"><colgroup><col style="width: 125px;"><col style="width: 125px;"></colgroup><thead><tr><th scope="col" colspan="2" class="csFirst csLast"><strong>SALDOS VENCIDOS</strong></th></tr></thead><tbody id="frmEdoccMain:_idJsp456:tbody_element"><tr><td class="csFirst"><div id="frmEdoccMain:_idJsp466" class="csRight"><b>Capital</b></div></td><td class="csLast"><div id="frmEdoccMain:_idJsp469" class="csRightRed">$130,991.81</div></td></tr><tr class="csZebra"><td class="csFirst"><div id="frmEdoccMain:_idJsp484" class="csRight"><b>Letra Adelantada</b></div></td><td class="csLast"><div id="frmEdoccMain:_idJsp487" class="csRightRed">$0.00</div></td></tr><tr><td class="csFirst"><div id="frmEdoccMain:_idJsp490" class="csRight"><b>Letra Atrapada</b></div></td><td class="csLast"><div id="frmEdoccMain:_idJsp493" class="csRightRed">$0.00</div></td></tr><tr class="csZebra"><td class="csFirst"><div id="frmEdoccMain:_idJsp496" class="csRight"><b>FECI</b></div></td><td class="csLast"><div id="frmEdoccMain:_idJsp499" class="csRightRed">$17,013.53</div></td></tr><tr><td class="csFirst"><div id="frmEdoccMain:_idJsp502" class="csRight"><b>Interés</b></div></td><td class="csLast"><div id="frmEdoccMain:_idJsp505" class="csRightRed">$109,220.30</div></td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>Seguro Vida</b></td><td style="text-align:right" class="csRightRed csLast">$0.00</td></tr><tr><td style="text-align:right" class="csFirst"><b>Otro Seguro</b></td><td style="text-align:right" class="csRightRed csLast">$0.00</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>Gastos</b></td><td style="text-align:right" class="csRightRed csLast">$0.00</td></tr><tr><td style="text-align:right" class="csFirst"><b>ITBMS Gastos</b></td><td style="text-align:right" class="csRightRed csLast">$0.00</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>Comisiones</b></td><td style="text-align:right" class="csRightRed csLast">$0.00</td></tr><tr><td style="text-align:right" class="csFirst"><b>ITBMS Comisiones</b></td><td style="text-align:right" class="csRightRed csLast">$0.00</td></tr><tr class="csZebra"><td style="text-align:right" class="csFirst"><b>Interés Moratorio</b></td><td style="text-align:right" class="csRightRed csLast">$17,000.65</td></tr><tr><td style="text-align:right" class="csFirst"><b>TOTAL VENCIDO</b></td><td style="text-align:right" class="csRightRed csLast">$274,226.29</td></tr></tbody></table></div></div></div></div><div class="csTableBottomLeft"><div class="csTableBottomRight"></div></div></div></div></td></tr></tbody></table><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 500px;" class="csLabels"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel"><fieldset id="frmEdoccMain:_idJsp636"><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 500px;" class="csLabels"><col class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:left"><strong>A esta fecha el crédito no esta en prelación horizontal</strong></div></td><td>&nbsp;</td></tr></tbody></table></fieldset></fieldset></div></td></tr></tbody></table></fieldset><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 250px;" class="csLabels"><col style="width: 250px;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:left"><strong>Impresión</strong> <strong>17/06/2020</strong></div></td><td><div class="csFields" style="text-align:right"><strong>Calculadora Comercial.</strong><strong></strong></div></td></tr><tr><td colspan="2" class="csLabel"><div class="csLabel" style="text-align:left"><b>Esta información es para uso interno, queda estrictamente prohibido imprimirla para proporcionarla a personas ajenas a esta institución, de lo contrario se sujetaran a las sanciones penales correspondientes.</b></div></td></tr></tbody></table></fieldset></div><input type="hidden" name="frmEdoccMain_SUBMIT" value="1"><input type="hidden" name="jsf_sequence" value="6"><input type="hidden" name="frmEdoccMain:_idcl" value=""><input type="hidden" name="sistema" value=""><input type="hidden" name="valorizar" value=""><input type="hidden" name="fifo" value=""></form></div><div id="_idJsp649" style="width: 450px;" class="csCol-2"><div id="_idJsp650" class="scrollingTableMenu"><div id="_idJsp652" class="csRow"><form id="frmOpcMenu" name="frmOpcMenu" class="csForm csMsgs-x" method="post" autocomplete="off" action="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf" target=""><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 40px;" class="csLabels"><col style="width: 40px;" class="csFields"><col style="width: 40px;" class="csLabels"><col style="width: 40px;" class="csFields"><col style="width: 40px;" class="csLabels"><col style="width: 40px;" class="csFields"><col style="width: 40px;" class="csLabels"><col style="width: 100px;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel"><a id="frmOpcMenu:idRecupEdocc" name="frmOpcMenu:idRecupEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmdSeleccionado=recupEdocc&amp;cmd_recupEdocc=" class="csAct"><small><small>RECUP</small></small></a></div></td><td><div class="csFields"><a id="frmOpcMenu:idCondoEdocc" name="frmOpcMenu:idCondoEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_condoEdocc=&amp;cmdSeleccionado=condo" class="csAct"><small><small>CONDO</small></small></a></div></td><td class="csLabel"><div class="csLabel"><a id="frmOpcMenu:idDispoEdocc" name="frmOpcMenu:idDispoEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_dispoEdocc=&amp;cmdSeleccionado=dispo" class="csAct"><small><small>DISPO</small></small></a></div></td><td><div class="csFields"><a id="frmOpcMenu:idGastoEdocc" name="frmOpcMenu:idGastoEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmdSeleccionado=gasto&amp;cmd_ope_gastoEdocc=" class="csAct"><small><small>GASTO</small></small></a></div></td><td class="csLabel"><div class="csLabel"><a id="frmOpcMenu:idSfavoEdocc" name="frmOpcMenu:idSfavoEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmdSeleccionado=sfavo&amp;cmd_ope_sfavoEdocc=" class="csAct"><small><small>SFAVO</small></small></a></div></td><td><div class="csFields"><a id="frmOpcMenu:idBajaEdocc" name="frmOpcMenu:idBajaEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmdSeleccionado=baja&amp;cmd_ope_bajaEdocc=" class="csAct"><small><small>BAJA</small></small></a></div></td><td class="csLabel"><div class="csLabel"><a id="frmOpcMenu:idChabiEdocc" name="frmOpcMenu:idChabiEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?cmd_chabiEdocc=&amp;jsf_sequence=6&amp;cmdSeleccionado=chabi" class="csAct"><small><small>CHABI</small></small></a></div></td><td><div class="csFields"><a id="frmOpcMenu:idVantiEdocc" name="frmOpcMenu:idVantiEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmdSeleccionado=vanti&amp;cmd_vantiEdocc=" class="csAct"><small><small>VANTI</small></small></a></div></td></tr><tr><td class="csLabel"><div class="csLabel"><a id="frmOpcMenu:idIncreEdocc" name="frmOpcMenu:idIncreEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmdSeleccionado=incre&amp;cmd_ope_increEdocc=" class="csAct"><small><small>INCRE</small></small></a></div></td><td><div class="csFields"><a id="frmOpcMenu:idCancelEdocc" name="frmOpcMenu:idCancelEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmdSeleccionado=cancel&amp;cmd_ope_cancel=" class="csAct"><small><small>CANCEL</small></small></a></div></td><td class="csLabel"><div class="csLabel"><a id="frmOpcMenu:idPromoEdocc" name="frmOpcMenu:idPromoEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_promoEdocc=&amp;cmdSeleccionado=promo" class="csAct"><small><small>PROMO</small></small></a></div></td><td><div class="csFields"><a id="frmOpcMenu:idTminiEdocc" name="frmOpcMenu:idTminiEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmdSeleccionado=tmini&amp;cmd_tminiEdocc=" class="csAct"><small><small>TMINI</small></small></a></div></td><td class="csLabel"><div class="csLabel"><a id="frmOpcMenu:idRecalEdocc" name="frmOpcMenu:idRecalEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmdSeleccionado=recal&amp;cmd_recalEdocc=" class="csAct"><small><small>RECAL</small></small></a></div></td><td><div class="csFields"><a id="frmOpcMenu:idSuspeEdocc" name="frmOpcMenu:idSuspeEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmdSeleccionado=suspe&amp;cmd_ope_suspeEdocc=" class="csAct"><small><small>SUSPE</small></small></a></div></td><td class="csLabel"><div class="csLabel"><a id="frmOpcMenu:idIarotEdocc" name="frmOpcMenu:idIarotEdocc" href="/KronerPA/pages/kroner/operacion/edocc/main/edoccMain.jsf?jsf_sequence=6&amp;cmd_iarotEdocc=&amp;cmdSeleccionado=iarot" class="csAct"><small><small>IAROT</small></small></a></div></td><td>&nbsp;</td></tr></tbody></table></fieldset><input type="hidden" name="frmOpcMenu_SUBMIT" value="1"><input type="hidden" name="jsf_sequence" value="6"><input type="hidden" name="frmOpcMenu:_idcl" value=""><input type="hidden" name="cmdSeleccionado" value=""></form></div></div></div></div></div>
+			</div></div>
+		<script type="text/javascript">//<![CDATA[ 
+Event.observe(window, 'load', loadJs);
+function loadJs(){
+Event.observe('_idJsp9:_idJsp18','click',function(event) {$('_idJsp9:_idJsp18').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_edocc',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp19','click',function(event) {$('_idJsp9:_idJsp19').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_chist',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp20','click',function(event) {$('_idJsp9:_idJsp20').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_optabam',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp21','click',function(event) {$('_idJsp9:_idJsp21').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_ope_reest',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp22','click',function(event) {$('_idJsp9:_idJsp22').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_op_modif',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp23','click',function(event) {$('_idJsp9:_idJsp23').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_ope_ajust',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp24','click',function(event) {$('_idJsp9:_idJsp24').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_ope_apert',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp25','click',function(event) {$('_idJsp9:_idJsp25').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_ope_formu',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp26','click',function(event) {$('_idJsp9:_idJsp26').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_ope_recon',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp27','click',function(event) {$('_idJsp9:_idJsp27').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_ope_cprel',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp28','click',function(event) {$('_idJsp9:_idJsp28').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_ope_dfijo',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp31','click',function(event) {$('_idJsp9:_idJsp31').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_con_caven',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp32','click',function(event) {$('_idJsp9:_idJsp32').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_con_calcu',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp33','click',function(event) {$('_idJsp9:_idJsp33').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_con_ccred',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp34','click',function(event) {$('_idJsp9:_idJsp34').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_con_cxcte',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp35','click',function(event) {$('_idJsp9:_idJsp35').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_con_cnomb',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp36','click',function(event) {$('_idJsp9:_idJsp36').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_con_riesgo',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp37','click',function(event) {$('_idJsp9:_idJsp37').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_con_ctotu',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp38','click',function(event) {$('_idJsp9:_idJsp38').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_con_hiscr',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp39','click',function(event) {$('_idJsp9:_idJsp39').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_con_deduc',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp40','click',function(event) {$('_idJsp9:_idJsp40').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_con_edoimp',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp41','click',function(event) {$('_idJsp9:_idJsp41').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_con_flexi',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp42','click',function(event) {$('_idJsp9:_idJsp42').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_con_clin',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp45','click',function(event) {$('_idJsp9:_idJsp45').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_ctb_aplic',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp46','click',function(event) {$('_idJsp9:_idJsp46').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_ctb_ctrls',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp47','click',function(event) {$('_idJsp9:_idJsp47').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_ctb_ctaco',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp48','click',function(event) {$('_idJsp9:_idJsp48').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_ctb_derra',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp49','click',function(event) {$('_idJsp9:_idJsp49').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_ctb_condi',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp52','click',function(event) {$('_idJsp9:_idJsp52').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_cat_abase',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp53','click',function(event) {$('_idJsp9:_idJsp53').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_initAcamb',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp54','click',function(event) {$('_idJsp9:_idJsp54').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_cat_catgr',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp55','click',function(event) {$('_idJsp9:_idJsp55').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_cat_nmontBegin',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp56','click',function(event) {$('_idJsp9:_idJsp56').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_cat_paises',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp57','click',function(event) {$('_idJsp9:_idJsp57').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_cat_calen',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp60','click',function(event) {$('_idJsp9:_idJsp60').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_cte_consultas',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp61','click',function(event) {$('_idJsp9:_idJsp61').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_cte_mtto',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:_idJsp62','click',function(event) {$('_idJsp9:_idJsp62').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_cte_codeu',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:command','blur',function(event) {this.value = this.value.toUpperCase();});Event.observe('_idJsp9:_idJsp73','click',function(event) {$('_idJsp9:_idJsp73').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_launch_service',null); submitForm('_idJsp9');Event.stop(event);});Event.observe('_idJsp9:idSalir','click',function(event) {$('_idJsp9:idSalir').href='#';document.forms['_idJsp9']['_idJsp9:_idcl'].value='submit'; registerEventValue('_idJsp9','cmd_logoffMain',null); submitForm('_idJsp9');Event.stop(event);});
+	function clear__5FidJsp9()
+	{
+		clearFormHiddenParams__idJsp9('_idJsp9');
+	}
+	
+	function clearFormHiddenParams__idJsp9(currFormName)
+	{
+		var f = document.forms['_idJsp9'];
+		f.elements['_idJsp9:_idcl'].value='';
+		f.target='';
+	}
+	
+	clearFormHiddenParams__idJsp9();Event.observe('_idJsp101','click',function(event) {Imprimir.printSpecial('printSection', true);});Event.observe('frmEdoccMain:numeroCredito', 'change', function (){blockKey(this,/[^0-9]/g);})
+Event.observe('frmEdoccMain:numeroCredito', 'keyup', function (){blockKey(this,/[^0-9]/g);})
+Event.observe('frmEdoccMain:dateTextfield_short','blur',function(event) {Valida.formatDateField(this);});Event.observe('frmEdoccMain:_idJsp120','click',function(event) {$('frmEdoccMain:_idJsp120').href='#';document.forms['frmEdoccMain']['valorizar'].value='0';document.forms['frmEdoccMain']['fifo'].value='0';document.forms['frmEdoccMain']['sistema'].value='0';document.forms['frmEdoccMain']['frmEdoccMain:_idcl'].value='submit'; registerEventValue('frmEdoccMain','cmd_edoccFind',null); submitForm('frmEdoccMain');Event.stop(event);});Event.observe('frmEdoccMain:_idJsp145','click',function(event) {$('frmEdoccMain:_idJsp145').href='#';document.forms['frmEdoccMain']['frmEdoccMain:_idcl'].value='submit'; registerEventValue('frmEdoccMain','cmd_edoccComent',null); submitForm('frmEdoccMain');Event.stop(event);});
+	function clear_frmEdoccMain()
+	{
+		clearFormHiddenParams_frmEdoccMain('frmEdoccMain');
+	}
+	
+	function clearFormHiddenParams_frmEdoccMain(currFormName)
+	{
+		var f = document.forms['frmEdoccMain'];
+		f.elements['frmEdoccMain:_idcl'].value='';
+		f.elements['sistema'].value='';
+		f.elements['valorizar'].value='';
+		f.elements['fifo'].value='';
+		f.target='';
+	}
+	
+	clearFormHiddenParams_frmEdoccMain();Event.observe('frmOpcMenu:idRecupEdocc','click',function(event) {$('frmOpcMenu:idRecupEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='recupEdocc';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_recupEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idCondoEdocc','click',function(event) {$('frmOpcMenu:idCondoEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='condo';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_condoEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idDispoEdocc','click',function(event) {$('frmOpcMenu:idDispoEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='dispo';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_dispoEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idGastoEdocc','click',function(event) {$('frmOpcMenu:idGastoEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='gasto';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_ope_gastoEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idSfavoEdocc','click',function(event) {$('frmOpcMenu:idSfavoEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='sfavo';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_ope_sfavoEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idBajaEdocc','click',function(event) {$('frmOpcMenu:idBajaEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='baja';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_ope_bajaEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idChabiEdocc','click',function(event) {$('frmOpcMenu:idChabiEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='chabi';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_chabiEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idVantiEdocc','click',function(event) {$('frmOpcMenu:idVantiEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='vanti';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_vantiEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idIncreEdocc','click',function(event) {$('frmOpcMenu:idIncreEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='incre';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_ope_increEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idCancelEdocc','click',function(event) {$('frmOpcMenu:idCancelEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='cancel';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_ope_cancel',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idPromoEdocc','click',function(event) {$('frmOpcMenu:idPromoEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='promo';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_promoEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idTminiEdocc','click',function(event) {$('frmOpcMenu:idTminiEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='tmini';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_tminiEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idRecalEdocc','click',function(event) {$('frmOpcMenu:idRecalEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='recal';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_recalEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idSuspeEdocc','click',function(event) {$('frmOpcMenu:idSuspeEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='suspe';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_ope_suspeEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});Event.observe('frmOpcMenu:idIarotEdocc','click',function(event) {$('frmOpcMenu:idIarotEdocc').href='#';document.forms['frmOpcMenu']['cmdSeleccionado'].value='iarot';document.forms['frmOpcMenu']['frmOpcMenu:_idcl'].value='submit'; registerEventValue('frmOpcMenu','cmd_iarotEdocc',null); submitForm('frmOpcMenu');Event.stop(event);});
+	function clear_frmOpcMenu()
+	{
+		clearFormHiddenParams_frmOpcMenu('frmOpcMenu');
+	}
+	
+	function clearFormHiddenParams_frmOpcMenu(currFormName)
+	{
+		var f = document.forms['frmOpcMenu'];
+		f.elements['frmOpcMenu:_idcl'].value='';
+		f.elements['cmdSeleccionado'].value='';
+		f.target='';
+	}
+	
+	clearFormHiddenParams_frmOpcMenu();}
+
+//]]></script></div></div><div class="csOverlayContainer csHide" id="panelModal"><div class="csPanel csPanelOverlay csOverlayShadow">   <div class="csPanelTopLeft"><div class="csPanelTopRight">       <div class="csPanelHeading">           <div class="csHeadingCol">               <div class="csNav-x">               </div>           </div>           <h3 tabindex="0" class="csPanelToggle">               <span class="csPanelOverlayHeading">Default Panel Heading</span>           </h3>       </div>       <div class="csPanelContent">           <div class="csPanelScroll"></div>       </div>   </div>   </div>   <div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div></div></div><div class="csOverlayContainer csHide" id="panelOverlayHelp">   <div class="csPanel csPanelEm">       <div class="csPanelTopLeft"><div class="csPanelTopRight">           <div class="csPanelHeading">               <div class="csHeadingCol">                  <div class="csNav-x">                   <ul class="csNavList">                       <li class="csNavItem-0 csNavFirst csNavIcon csIconClose">                           <div class="csNavWrap">                               <a class="csOverlayClose csClick" href="#">Close</a>                           </div>                       </li>                   </ul>                   </div>               </div>               <h3 class="csPanelToggle" tabindex="0">                   <span class="csPanelOverlayHeading csHideForSR">Help Panel</span>               </h3>           </div>           <div class="csPanelContent">               <div class="csPanelScroll"></div>           </div>         </div>       </div>       <div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div>   </div></div><div class="csOverlayContainer csHide" id="panelOverlay">  <div class="csPanel csPanelOverlay">       <div class="csPanelTopLeft"><div class="csPanelTopRight">           <div class="csPanelHeading">               <div class="csHeadingCol">                   <div class="csNav-x">                   <ul class="csNavList">                       <li class="csNavItem-0 csNavFirst csNavIcon csIconClose">                           <div class="csNavWrap">                               <a class="csOverlayClose csClick" href="#">Close</a>                           </div>                       </li>                   </ul>                   </div>               </div>              <h3 class="csPanelToggle" tabindex="0">                   <span class="csPanelOverlayHeading">Default Panel Heading</span>               </h3>           </div>           <div class="csPanelContent">               <div class="csPanelScroll"></div>           </div>                     </div>       </div>       <div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div>   </div></div><div class="csOverlayContainer csHide" id="panelLightBox">   <div class="csPanel csPanelOverlay csOverlayShadow">       <div class="csPanelTopLeft">           <div class="csPanelTopRight">              <div class="csPanelHeading">                   <div class="csHeadingCol">                       <div class="csNav-x"></div>                   </div>                   <h3 tabindex="0" class="csPanelToggle">                       <span class="csPanelToggleText csShow">Hide</span>                    <span class="csPanelToggleText csHide">Show</span>                       <span class="csPanelOverlayHeading">Panel</span>                   </h3>               </div>               <div class="csPanelContent">                   <div class="csPanelScroll"></div>               </div>           </div>       </div>       <div class="csPanelBottomLeft">           <div class="csPanelBottomRight"></div>       </div>   </div></div></div>
+	
+</body></html>

@@ -1,0 +1,50 @@
+
+Z	Web:S5254"@Add "lang" and/or "xml:lang" attributes to this "<html>" element(œ÷Ãûÿÿÿÿ
+MWeb:ImgWithoutAltCheck¡"%Add an "alt" attribute to this image.(üÀõÆúÿÿÿÿ
+DWeb:BoldAndItalicTagsCheck¿"Replace this <i> tag by <em>.(Î”şç
+DWeb:BoldAndItalicTagsCheckÂ"Replace this <i> tag by <em>.(µŞ‹•
+CWeb:BoldAndItalicTagsCheckÅ"Replace this <i> tag by <em>.(Õê‚?
+DWeb:BoldAndItalicTagsCheckÈ"Replace this <i> tag by <em>.(æ¦èÌ
+IWeb:BoldAndItalicTagsCheckÑ"Replace this <i> tag by <em>.(À¾Ğïúÿÿÿÿ
+NWeb:TableWithoutCaptionCheckÒ" Add a description to this table.(èÊ²²şÿÿÿÿ
+@	Web:S5256Ò"%Add "<th>" headers to this "<table>".(èÊ²²şÿÿÿÿ
+D	Web:S1827Ô")Remove this deprecated "width" attribute.(œË«¯ùÿÿÿÿ
+E	Web:S1827Ô"*Remove this deprecated "valign" attribute.(œË«¯ùÿÿÿÿ
+DWeb:BoldAndItalicTagsCheckÚ"Replace this <i> tag by <em>.(ÈáÖÖ
+IWeb:BoldAndItalicTagsCheckä"Replace this <i> tag by <em>.(ËĞ¡ÿÿÿÿÿ
+CWeb:BoldAndItalicTagsCheckç"Replace this <i> tag by <em>.(ë­—
+NWeb:TableWithoutCaptionCheck¦" Add a description to this table.(¼ëùÏşÿÿÿÿ
+IWeb:BoldAndItalicTagsCheck³"Replace this <i> tag by <em>.(Õ¯¤„ÿÿÿÿÿ
+DWeb:BoldAndItalicTagsCheck»"Replace this <i> tag by <em>.(¤••…
+IWeb:BoldAndItalicTagsCheckÂ"Replace this <i> tag by <em>.(Õ¯¤„ÿÿÿÿÿ
+IWeb:BoldAndItalicTagsCheckÉ"Replace this <i> tag by <em>.(Õ¯¤„ÿÿÿÿÿ
+CWeb:BoldAndItalicTagsCheckĞ"Replace this <i> tag by <em>.(¹Ôª
+IWeb:BoldAndItalicTagsCheckÖ"Replace this <i> tag by <em>.(µëç”şÿÿÿÿ
+IWeb:BoldAndItalicTagsCheckİ"Replace this <i> tag by <em>.(µëç”şÿÿÿÿ
+IWeb:BoldAndItalicTagsCheckä"Replace this <i> tag by <em>.(µëç”şÿÿÿÿ
+NWeb:TableWithoutCaptionCheckö" Add a description to this table.(¼ëùÏşÿÿÿÿ
+h Web:TableHeaderHasIdOrScopeCheckù";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ü¾¯¬
+h Web:TableHeaderHasIdOrScopeCheckú";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÁØ±
+h Web:TableHeaderHasIdOrScopeCheckû";Add either an 'id' or a 'scope' attribute to this <th> tag.(ñ“²²
+h Web:TableHeaderHasIdOrScopeCheckü";Add either an 'id' or a 'scope' attribute to this <th> tag.(×¥‹Ü
+h Web:TableHeaderHasIdOrScopeCheckı";Add either an 'id' or a 'scope' attribute to this <th> tag.(›ùÎœ
+NWeb:TableWithoutCaptionCheck“" Add a description to this table.(Ûô¡ıÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheck—";Add either an 'id' or a 'scope' attribute to this <th> tag.(ôÜ¢¦úÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheck˜";Add either an 'id' or a 'scope' attribute to this <th> tag.(Öê¤ÿÿÿÿÿ
+h Web:TableHeaderHasIdOrScopeCheck™";Add either an 'id' or a 'scope' attribute to this <th> tag.(ÔÓ•§
+m Web:TableHeaderHasIdOrScopeCheckš";Add either an 'id' or a 'scope' attribute to this <th> tag.(°‚Ø©ùÿÿÿÿ
+h Web:TableHeaderHasIdOrScopeCheck›";Add either an 'id' or a 'scope' attribute to this <th> tag.(†÷…–
+IWeb:BoldAndItalicTagsCheck¦"Replace this <i> tag by <em>.(ØÏìŸúÿÿÿÿ
+IWeb:BoldAndItalicTagsCheck¼"Replace this <i> tag by <em>.(ØÏìŸúÿÿÿÿ
+IWeb:BoldAndItalicTagsCheckÚ"Replace this <i> tag by <em>.(ÚÖû£ıÿÿÿÿ
+IWeb:BoldAndItalicTagsCheckß"Replace this <i> tag by <em>.(ÚÖû£ıÿÿÿÿ
+IWeb:BoldAndItalicTagsCheckí"Replace this <i> tag by <em>.(Ê®±Àüÿÿÿÿ
+IWeb:TableWithoutCaptionCheckï" Add a description to this table.(½ÂÒå
+g Web:TableHeaderHasIdOrScopeCheckó";Add either an 'id' or a 'scope' attribute to this <th> tag.(“øÇb
+h Web:TableHeaderHasIdOrScopeCheckô";Add either an 'id' or a 'scope' attribute to this <th> tag.(ôøÓÂ
+m Web:TableHeaderHasIdOrScopeCheckõ";Add either an 'id' or a 'scope' attribute to this <th> tag.(¯Ã³Æúÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheckö";Add either an 'id' or a 'scope' attribute to this <th> tag.(Ü’é—şÿÿÿÿ
+m Web:TableHeaderHasIdOrScopeCheck÷";Add either an 'id' or a 'scope' attribute to this <th> tag.(ß¿Øæúÿÿÿÿ
+h Web:TableHeaderHasIdOrScopeCheckø";Add either an 'id' or a 'scope' attribute to this <th> tag.(²ëä
+IWeb:BoldAndItalicTagsCheck‡"Replace this <i> tag by <em>.(ªèªÈúÿÿÿÿ
+IWeb:BoldAndItalicTagsCheck“"Replace this <i> tag by <em>.(È“åËÿÿÿÿÿ

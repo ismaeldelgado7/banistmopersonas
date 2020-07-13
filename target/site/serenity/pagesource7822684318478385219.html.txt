@@ -1,0 +1,142 @@
+<html dir="ltr"><head><link href="/KronerPA/jhx/css/uics.css" rel="stylesheet" type="text/css" media="all"><link href="/KronerPA/jhx/css/onehsbc/theme.css" rel="stylesheet" type="text/css" media="all"><!--[if IE 8]><link href="/KronerPA/jhx/css/ieSupport/uics-ie8.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 7]><link href="/KronerPA/jhx/css/ieSupport/uics-ie7.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 6]><link href="/KronerPA/jhx/css/ieSupport/uics-ie6.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 6]><link href="/jhx/css/ieSupport/theme-ie6.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><link href="/KronerPA/jhx/css/onehsbc/layout.css" rel="stylesheet" type="text/css" media="all"><link href="/KronerPA/jhx/css/kroner_custom.css" rel="stylesheet" type="text/css" media="all"><script src="/KronerPA/jhx/js/scriptaculous/lib/prototype.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/scriptaculous/src/scriptaculous.js" type="text/javascript"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/builder.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/effects.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/dragdrop.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/controls.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/slider.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/sound.js"></script><script src="/KronerPA/jhx/js/uics.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/tablekit.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/menus.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/calendar.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/panels.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/form.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/resizable.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/listBuilder.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/insertableContent.js" type="text/javascript"></script><!--[if IE 6]><script src="/KronerPA/jhx/js/uics-ie6.js" type="text/javascript"></script><![endif]--><script src="/KronerPA/jhx/js/jhx/jhx_action.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/jhx/jhx_clientValidators.js" type="text/javascript"></script><title>Kroner Panamá </title><link href="/KronerPA/jhx/css/uics.css" rel="stylesheet" type="text/css" media="all"><link href="/KronerPA/jhx/css/onehsbc/theme.css" rel="stylesheet" type="text/css" media="all"><link href="/KronerPA/jhx/css/onehsbc/layout.css" rel="stylesheet" type="text/css" media="all"><link href="/KronerPA/jhx/css/kroner_custom.css" rel="stylesheet" type="text/css" media="all"><script src="/KronerPA/jhx/js/scriptaculous/lib/prototype.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/scriptaculous/src/scriptaculous.js" type="text/javascript"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/builder.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/effects.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/dragdrop.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/controls.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/slider.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/sound.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/builder.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/effects.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/dragdrop.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/controls.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/slider.js"></script><script type="text/javascript" src="https://kroneruat.banistmo.corp/KronerPA/jhx/js/scriptaculous/src/sound.js"></script><script src="/KronerPA/jhx/js/uics.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/tablekit.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/menus.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/calendar.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/panels.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/form.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/resizable.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/listBuilder.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/insertableContent.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/jhx/jhx_action.js" type="text/javascript"></script><script src="/KronerPA/jhx/js/jhx/jhx_clientValidators.js" type="text/javascript"></script><title>Kroner Panamá </title><script type="text/javascript">
+			    var bajb_backdetect={Version:'1.0.0',Description:'Back Button Detection',Browser:{IE:!!(window.attachEvent&&!window.opera),Safari:navigator.userAgent.indexOf('Apple')>-1,Opera:!!window.opera},FrameLoaded:0,FrameTry:0,FrameTimeout:null,OnBack:function(){alert('Back Button Clicked')},BAJBFrame:function(){var BAJBOnBack=document.getElementById('BAJBOnBack');if(bajb_backdetect.FrameLoaded>1){if(bajb_backdetect.FrameLoaded==2){bajb_backdetect.OnBack();history.back()}}bajb_backdetect.FrameLoaded++;if(bajb_backdetect.FrameLoaded==1){if(bajb_backdetect.Browser.IE){bajb_backdetect.SetupFrames()}else{bajb_backdetect.FrameTimeout=setTimeout("bajb_backdetect.SetupFrames();",700)}}},SetupFrames:function(){clearTimeout(bajb_backdetect.FrameTimeout);var BBiFrame=document.getElementById('BAJBOnBack');var checkVar=BBiFrame.src.substring(-11,11);if(bajb_backdetect.FrameLoaded==1&&checkVar!="HistoryLoad"){BBiFrame.src="blank.html?HistoryLoad"}else{if(bajb_backdetect.FrameTry<2&&checkVar!="HistoryLoad"){bajb_backdetect.FrameTry++;bajb_backdetect.FrameTimeout=setTimeout("bajb_backdetect.SetupFrames();",700)}}},SafariHash:'false',Safari:function(){if(bajb_backdetect.SafariHash=='false'){if(window.location.hash=='#b'){bajb_backdetect.SafariHash='true'}else{window.location.hash='#b'}setTimeout("bajb_backdetect.Safari();",100)}else if(bajb_backdetect.SafariHash=='true'){if(window.location.hash==''){bajb_backdetect.SafariHash='back';bajb_backdetect.OnBack();history.back()}else{setTimeout("bajb_backdetect.Safari();",100)}}},Initialise:function(){if(bajb_backdetect.Browser.Safari){setTimeout("bajb_backdetect.Safari();",600)}else{document.write('<iframe src="blank.html" style="display:none;" id="BAJBOnBack" onunload="alert(\'de\')" onload="bajb_backdetect.BAJBFrame();"></iframe>')}}};bajb_backdetect.Initialise();
+
+                bajb_backdetect.OnBack = function() {
+	       			var urlNueva = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname.split("/")[1] + "/pages/common/login.jsf?cmd_initLogin=1";
+		       		
+		       		window.location.replace(urlNueva);
+                    
+                }
+			
+			
+	            window.history.forward(1);
+				document.addEventListener("keydown", my_onkeydown_handler, false);
+                function my_onkeydown_handler(e) {
+                    var keyCode = e.keyCode;
+                    switch (keyCode) {
+                    case 116: // 'F5'
+                        e.preventDefault();
+                        break;
+                    }
+                }
+            
+	            function closeAndGoIntranet() {
+					self.close();
+					window.open("","Intranet");
+				}
+				
+				if('<div class="csPanel csPanelStatus csPanelErrors"><div class="csPanelTopLeft"><div class="csPanelTopRight"><div class="csPanelContent"><div class="csPanelScroll"><ul><li><strong>ERROR!</strong>  Ha llegado al número de sessiones permitidas, es necesario cerrar o esperar a que expire una sesión.</li></ul></div></div></div></div><div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div></div>' == '') {
+					if(false && (!true)) {
+		       			var urlNueva = window.location.protocol + "//" + window.location.host + "/" + window.location.pathname.split("/")[1] + "/pages/common/login.jsf?cmd_initLogin=1";
+			       		
+			       		window.location.replace(urlNueva);
+					}
+				}
+
+				document.onkeydown = function ()
+				{
+					if( (event.ctrlKey && event.keyCode == 78) || (event.ctrlKey && event.keyCode == 82)){
+					return false;
+					}
+				}
+
+
+				document.observe('dom:loaded', function() {
+   					$$('form[id$=mainLoginForm] input[id$=usuarioRacf]')[0].focus();
+				});
+                               
+            </script></head>
+		<!--[if IE 8]><link href="/KronerPA/jhx/css/ieSupport/uics-ie8.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 7]><link href="/KronerPA/jhx/css/ieSupport/uics-ie7.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 6]><link href="/KronerPA/jhx/css/ieSupport/uics-ie6.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 6]><link href="/jhx/css/ieSupport/theme-ie6.css" rel="stylesheet" type="text/css" media="all" /><![endif]--><!--[if IE 6]><script src="/KronerPA/jhx/js/uics-ie6.js" type="text/javascript"></script><![endif]-->
+			
+		
+
+		<body class="cs csV-3 csInterstitial-init csFormChange-init" lang="default"><div id="interstitial"><p>Loading, please wait...</p></div><div class="oh"><div id="csFader" class="csClick csFader csHide"></div><div id="csContainer" class="csFixedLayout csCenterLayout"><div id="csContainerWrap" class="csLayoutNoSideBar"><div id="csContainerCalendar"><div class="csPanelCover"></div><div id="csPanelCalendar"><div class="csChevron csChevronTop" id="csCalendarChevron"></div></div></div><div id="csPanelHint"><div id="csPanelHintWrap"><div class="csPanel csPanelHint"><div class="csPanelTopLeft"><div class="csPanelTopRight"><div class="csPanelContent"><div id="csPanelHintScroll" class="csPanelScroll"></div></div></div></div><div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div><div id="csHintChevron" class="csChevron csChevronTop"></div></div></div></div><div id="csSearchNSelect" class="csNav-x csMenu-x csClick csAccordian csSearchNSelect"> <div class="csPanelCover"></div>    <ul class="csNavList"><li class="csNavToggle-0 csNavFirst csMenuContextual csNavShow"><div id="csSearchNSelectContent" class="csNavContent"><div class="csPanel"><div class="csPanelTopLeft"><div class="csPanelTopRight"><div class="csPanelContent"><div id="csSearchNSelectScroll" class="csPanelScroll"></div></div></div></div><div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div></div></div></li></ul></div>  <div id="csMenuContextual" class="csNav-x csMenu-x csClick csAccordian csMenuContextual"> <div class="csPanelCover"></div>  <ul class="csNavList"><li class="csNavToggle-0 csNavFirst csMenuContextual csNavShow"><div id="csMenuContextualContent" class="csNavContent"><div class="csPanel"><div class="csPanelTopLeft"><div class="csPanelTopRight"><div class="csPanelContent"><div id="csMenuContextualScroll" class="csPanelScroll"></div></div></div></div><div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div></div></div></li></ul> </div>
+			<div id="_idJsp7" class="csColumns"><div class="csColumnsWrap">
+				
+					
+						
+						
+							
+								
+									
+								
+							
+						
+					
+				<form id="mainFormPage" name="mainFormPage" class="csForm csMsgs-x" method="post" autocomplete="off" action="/KronerPA/pages/common/login.jsf"><div id="csMast"><div id="csMastWrap"><div id="csLogo"><img id="mainFormPage:_idJsp9" src="/KronerPA/images/hsbclogo_localbank.gif"></div><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 1000px;" class="csLabels"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><a id="mainFormPage:_idJsp12" name="mainFormPage:_idJsp12" href="JavaScript:self.close();" title="Cerrar">Cerrar</a></div></td></tr></tbody></table></fieldset></div></div><input type="hidden" name="mainFormPage_SUBMIT" value="1"><input type="hidden" name="jsf_sequence" value="3"></form>
+				<br><br>
+
+				
+					
+					
+						
+							
+							
+						
+						
+						
+							
+								
+									
+								
+
+								
+									
+										
+									
+								
+
+								
+									
+								
+
+								
+									
+								
+
+							
+						
+						
+					
+
+
+
+					
+						
+						
+						
+							
+						
+						
+							
+						
+						
+						    
+							
+								
+							
+						
+					
+				<form id="mainLoginForm" name="mainLoginForm" class="csForm csMsgs-x" method="post" autocomplete="off" action="/KronerPA/pages/common/login.jsf" target=""><div class="csPanel csPanelStatus csPanelErrors"><div class="csPanelTopLeft"><div class="csPanelTopRight"><div class="csPanelContent"><div class="csPanelScroll"><ul><li><strong>ERROR!</strong>  Ha llegado al número de sessiones permitidas, es necesario cerrar o esperar a que expire una sesión.</li></ul></div></div></div></div><div class="csPanelBottomLeft"><div class="csPanelBottomRight"></div></div></div><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 400px;" class="csLabels"><col style="width: 200px;" class="csFields"><col style="width: 400px;" class="csLabels"></colgroup><tbody><tr><td colspan="3" class="csLabel"><div class="csLabel" style="text-align:center"><b>Para accesar a la aplicación Kroner debe<br>proporcionar su clave de RACF y password<br><br></b><div class="csHeading csHeadingRule"></div></div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"></div></td><td><div class="csFields" style="text-align:right"><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 30%;" class="csLabels"><col style="width: 70%;" class="csFields"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><label id="mainLoginForm:_idJsp24" for="mainLoginForm:usuarioRacf">Usuario:</label></div></td><td><div class="csFields" style="text-align:left"><input id="mainLoginForm:usuarioRacf" name="mainLoginForm:usuarioRacf" type="text" size="10" maxlength="8" class="csTextField csVal-required" value="50064459"></div></td></tr><tr><td class="csLabel"><div class="csLabel" style="text-align:right"><label id="mainLoginForm:_idJsp28" for="mainLoginForm:password">Contraseña:</label></div></td><td><div class="csFields" style="text-align:left"><input id="mainLoginForm:password" name="mainLoginForm:password" type="password" size="10" maxlength="8" class="csTextField csVal-required" autocomplete="off"></div></td></tr></tbody></table></fieldset></div></td><td class="csLabel"><div class="csLabel" style="text-align:right"></div></td></tr></tbody></table></fieldset><fieldset><table cellspacing="0" class="csTableForm"><colgroup><col style="width: 350px;" class="csLabels"><col style="width: 50px;" class="csFields"><col style="width: 475px;" class="csLabels"></colgroup><tbody><tr><td class="csLabel"><div class="csLabel" style="text-align:right"></div></td><td><div class="csFields" style="text-align:center"><span class="csButtonWrap csAct"><input id="mainLoginForm:btnAcceso" type="submit" class="csButton csAct" name="cmd_loginMain" value="Acceso"></span> </div></td><td class="csLabel"><div class="csLabel" style="text-align:left"><span class="csButtonWrap clear"><input id="mainLoginForm:btnNewPassword" type="submit" class="csButton clear" name="cmd_changePassword" value="Cambiar password"></span> </div></td></tr><tr><td class="hiddenText csLabel"><div class="csLabel">Ver.1.7.9 FCS</div></td><td>&nbsp;</td><td class="csLabel">&nbsp;</td></tr></tbody></table></fieldset><input type="hidden" name="mainLoginForm_SUBMIT" value="1"><input type="hidden" name="jsf_sequence" value="3"><input type="hidden" name="mainLoginForm:_idcl" value=""></form>
+			</div></div>
+		<script type="text/javascript">//<![CDATA[ 
+Event.observe(window, 'load', loadJs);
+function loadJs(){
+Event.observe('mainLoginForm:usuarioRacf','blur',function(event) {this.value = this.value.toUpperCase();});Event.observe('mainLoginForm:btnAcceso','click',function(){document.forms['mainLoginForm']['mainLoginForm:_idcl'].value='submit'; });Event.observe('mainLoginForm:btnNewPassword','click',function(){document.forms['mainLoginForm']['mainLoginForm:_idcl'].value='submit'; });
+	function clear_mainLoginForm()
+	{
+		clearFormHiddenParams_mainLoginForm('mainLoginForm');
+	}
+	
+	function clearFormHiddenParams_mainLoginForm(currFormName)
+	{
+		var f = document.forms['mainLoginForm'];
+		f.elements['mainLoginForm:_idcl'].value='';
+		f.target='';
+	}
+	
+	clearFormHiddenParams_mainLoginForm();}
+
+//]]></script></div></div></div>
+	
+</body></html>
